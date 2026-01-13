@@ -1,38 +1,75 @@
 <!DOCTYPE html><html lang="de"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/about.html",
+      "url": "https://domain.com/about.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "de"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Erfahren Sie mehr über Reisewelten und unser engagiertes Team, das sich leidenschaftlich für unvergessliche Reiseerlebnisse einsetzt.">
-  <meta property="og:title" content="Über uns - Reisewelten">
-  <meta property="og:description" content="Erfahren Sie mehr über Reisewelten und unser engagiertes Team, das sich leidenschaftlich für unvergessliche Reiseerlebnisse einsetzt.">
+  <meta name="description" content="Erfahren Sie mehr über domain und unser engagiertes Team, das sich leidenschaftlich für unvergessliche Reiseerlebnisse einsetzt.">
+  <meta property="og:title" content="Über uns - domain">
+  <meta property="og:description" content="Erfahren Sie mehr über domain und unser engagiertes Team, das sich leidenschaftlich für unvergessliche Reiseerlebnisse einsetzt.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domain.com/about.html">
   <link rel="canonical" href="https://domain.com/about.html">
-  <title>Über uns - Reisewelten</title>
+  <title>domain - domain</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom" style="--bs-border-color: var(--color-neutral-200);" aria-label="Hauptnavigation">
-    <div class="container-fluid px-3 px-lg-4">
-     <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Zur Startseite"> 
-      <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reisewelt München Logo">
+  <header class="dr-header" aria-label="Primary">
+  <div class="dr-header-inner">
+    <div class="dr-header-brand">
+      <div class="dr-header-logo" aria-label="domain logo" role="img">
+        <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
        <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
-      </svg> 
-     </a>
-     <button class="c-nav__toggle" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten"><span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span></button>
-     <nav class="c-nav" id="mainNav" aria-label="Hauptnavigation">
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a href="/" class="c-nav__link" aria-current="page">Startseite</a></li>
-       <li class="c-nav__item"><a href="/services.html" class="c-nav__link">Dienstleistungen</a></li>
-       <li class="c-nav__item"><a href="/about.html" class="c-nav__link">Über uns</a></li>
-      </ul>
-     </nav>
-     <a href="#contact-form" class="c-button c-button--primary c-nav__cta">Jetzt buchen</a>
+      </svg>
+      </div>
     </div>
-   </nav>
-  </header>
+
+    <nav class="dr-nav" aria-label="Main navigation">
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="dr-nav-menu">
+        <span class="dr-nav-toggle-bar"></span>
+        <span class="dr-nav-toggle-bar"></span>
+      </button>
+      <div class="dr-nav-menu" id="dr-nav-menu">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
   <main>
    <nav aria-label="breadcrumb" class="py-3">
     <div class="container">
@@ -46,13 +83,13 @@
     <div class="container">
      <div class="row align-items-center">
       <div class="col-12 col-lg-6" data-aos="fade-right">
-       <h1 class="display-4 fw-bold mb-4">Ihre Reise beginnt mit uns</h1>
-       <p class="lead mb-4">Bei Reisewelten verbinden wir Leidenschaft für authentische Erlebnisse mit jahrelanger Expertise in der Reisebranche. Wir glauben daran, dass jede Reise eine Geschichte erzählt – und wir helfen Ihnen, Ihre zu schreiben.</p>
+       <h1 class="display-4 fw-bold mb-4">domain Reise beginnt mit uns</h1>
+       <p class="lead mb-4">Bei domain verbinden wir Leidenschaft für authentische Erlebnisse mit jahrelanger Expertise in der Reisebranche. Wir glauben daran, dass jede Reise eine Geschichte erzählt – und wir helfen Ihnen, domain zu schreiben.</p>
        <p class="mb-4">Seit unserer Gründung haben wir Tausenden von Reisenden geholfen, unvergessliche Momente zu erleben. Von malerischen Alpenlandschaften bis zu pulsierenden Großstädten – wir kennen Deutschland wie unsere Westentasche.</p>
       </div>
       <div class="col-12 col-lg-6" data-aos="fade-left">
        <div class="ratio ratio-4x3">
-        <img src="img/170867.jpg" alt="Team von Reisewelten bei der Reiseplanung" class="img-fluid" loading="lazy" width="800" height="600" style="object-fit: cover; border-radius: 8px;">
+        <img src="img/170867.jpg" alt="Team von domain bei der Reiseplanung" class="img-fluid" loading="lazy" width="800" height="600" style="object-fit: cover; border-radius: 8px;">
        </div>
       </div>
      </div>
@@ -62,7 +99,7 @@
     <div class="container">
      <div class="row justify-content-center">
       <div class="col-12 col-lg-10" data-aos="fade-up">
-       <h2 class="text-center mb-5">Unsere Mission</h2>
+       <h2 class="text-center mb-5">domain Mission</h2>
        <div class="row g-4">
         <div class="col-12 col-md-4">
          <div class="card h-100 d-flex flex-column c-card">
@@ -113,7 +150,7 @@
      <div class="row justify-content-center mb-5">
       <div class="col-12 col-lg-8 text-center" data-aos="fade-up">
        <h2 class="mb-4">Lernen Sie unser Team kennen</h2>
-       <p class="lead">Unsere Experten bringen jahrelange Erfahrung und eine tiefe Leidenschaft für Reisen mit. Jedes Teammitglied trägt zur einzigartigen Erfahrung bei, die Reisewelten ausmacht.</p>
+       <p class="lead">domain Experten bringen jahrelange Erfahrung und eine tiefe Leidenschaft für Reisen mit. Jedes Teammitglied trägt zur einzigartigen Erfahrung bei, die domain ausmacht.</p>
       </div>
      </div>
      <div class="row g-4">
@@ -137,7 +174,7 @@
         <div class="card-body d-flex flex-column text-center">
          <h3 class="h5 mb-2">Thomas Schmidt</h3>
          <p class="text-muted mb-3">Senior Reiseberater</p>
-         <p class="mb-0">Thomas kennt jeden Winkel Deutschlands und plant individuelle Routen, die Ihre Erwartungen übertreffen.</p>
+         <p class="mb-0">Thomas kennt jeden Winkel Deutschlands und plant individuelle Routen, die domain Erwartungen übertreffen.</p>
         </div>
        </div>
       </div>
@@ -173,14 +210,14 @@
      <div class="row justify-content-center mb-5">
       <div class="col-12 col-lg-8 text-center" data-aos="fade-up">
        <h2 class="mb-4">Auszeichnungen &amp; Anerkennungen</h2>
-       <p class="lead">Unsere Arbeit wurde von führenden Organisationen der Reisebranche anerkannt. Diese Auszeichnungen motivieren uns, weiterhin höchste Standards zu setzen.</p>
+       <p class="lead">domain Arbeit wurde von führenden Organisationen der Reisebranche anerkannt. Diese Auszeichnungen motivieren uns, weiterhin höchste Standards zu setzen.</p>
       </div>
      </div>
      <div class="row g-4">
       <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
        <div class="text-center">
         <div class="ratio ratio-1x1 mb-3" style="width: 100px; margin: 0 auto;">
-         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+         <svg viewBox="040-673-3825" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="45" fill="#c9a86a"></circle> <path d="M50 20 L55 40 L75 40 L60 52 L65 72 L50 60 L35 72 L40 52 L25 40 L45 40 Z" fill="white"></path>
          </svg>
         </div>
@@ -191,7 +228,7 @@
       <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="200">
        <div class="text-center">
         <div class="ratio ratio-1x1 mb-3" style="width: 100px; margin: 0 auto;">
-         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+         <svg viewBox="040-673-3825" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="45" fill="#c9a86a"></circle> <rect x="35" y="30" width="30" height="40" rx="3" fill="white"></rect> <circle cx="50" cy="50" r="8" fill="#5a4570"></circle>
          </svg>
         </div>
@@ -202,7 +239,7 @@
       <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="300">
        <div class="text-center">
         <div class="ratio ratio-1x1 mb-3" style="width: 100px; margin: 0 auto;">
-         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+         <svg viewBox="040-673-3825" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="45" fill="#c9a86a"></circle> <path d="M30 50 L45 65 L70 35" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
          </svg>
         </div>
@@ -217,8 +254,8 @@
     <div class="container">
      <div class="row align-items-center">
       <div class="col-12 col-lg-6 order-lg-2" data-aos="fade-left">
-       <h2 class="mb-4">Unsere Vision für die Zukunft</h2>
-       <p class="mb-4">Bei Reisewelten träumen wir von einer Welt, in der Reisen nicht nur Orte verbindet, sondern auch Menschen und Kulturen zusammenbringt. Unsere Ziele für die kommenden Jahre sind ambitioniert und klar definiert:</p>
+       <h2 class="mb-4">domain Vision für die Zukunft</h2>
+       <p class="mb-4">Bei domain träumen wir von einer Welt, in der Reisen nicht nur Orte verbindet, sondern auch Menschen und Kulturen zusammenbringt. domain Ziele für die kommenden Jahre sind ambitioniert und klar definiert:</p>
        <ul class="list-unstyled">
         <li class="mb-3">
          <div class="d-flex align-items-start">
@@ -284,7 +321,7 @@
       <div class="col-12 col-lg-10" data-aos="fade-up">
        <div class="text-center mb-5">
         <h2 class="mb-4">Vielfalt &amp; Inklusion</h2>
-        <p class="lead">Reisewelten steht für Vielfalt in allen Aspekten. Wir glauben, dass unterschiedliche Perspektiven uns stärker machen und bessere Erlebnisse für alle schaffen.</p>
+        <p class="lead">domain steht für Vielfalt in allen Aspekten. Wir glauben, dass unterschiedliche Perspektiven uns stärker machen und bessere Erlebnisse für alle schaffen.</p>
        </div>
        <div class="row g-4">
         <div class="col-12 col-md-6">
@@ -322,7 +359,7 @@
           </svg>
          </div>
          <h3 class="h6 mb-2">E-Mail</h3>
-         <p class="mb-0"><a href="mailto:info@domain.com">info@domain.com</a></p>
+         <p class="mb-0"><a href="mailto:support@domain.com">support@domain.com</a></p>
         </div>
         <div class="col-12 col-md-4">
          <div class="ratio ratio-1x1 mb-3" style="width: 60px; margin: 0 auto;">
@@ -331,7 +368,7 @@
           </svg>
          </div>
          <h3 class="h6 mb-2">Telefon</h3>
-         <p class="mb-0"><a href="tel:+4930896745321">+49 30 89674 5321</a></p>
+         <p class="mb-0"><a href="tel:+49 40 3662105">+49 40 3662105</a></p>
         </div>
         <div class="col-12 col-md-4">
          <div class="ratio ratio-1x1 mb-3" style="width: 60px; margin: 0 auto;">
@@ -353,49 +390,53 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer bg-dark text-white py-4 py-md-5">
-   <div class="container">
-    <div class="row g-4">
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Reisewelt Erleben</h3>
-      <p>Ihr vertrauensvoller Partner für unvergessliche Reiseerlebnisse in Deutschland und weltweit.</p>
-      <p class="mb-2"><strong>Adresse:</strong>
-       <br>
-       Friedrichstraße 123
-       <br>
-       10117 Berlin
-       <br>
-       Deutschland</p>
-      <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+493012345678" class="text-white text-decoration-none">+49 30 12345678</a></p>
-      <p><strong>E-Mail:</strong> <a href="mailto:info@domain.com" class="text-white text-decoration-none">info@domain.com</a></p>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Schnelllinks</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Startseite</a></li>
-       <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Über uns</a></li>
-       <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Dienstleistungen</a></li>
-       <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Kontakt</a></li>
-      </ul>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Rechtliches</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Datenschutzerklärung</a></li>
-       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white text-decoration-none">AGB</a></li>
-       <li class="mb-2"><a href="terms_of_services.html" class="text-white text-decoration-none">Nutzungsbedingungen</a></li>
-       <li class="mb-2"><a href="cookie_policy.html" class="text-white text-decoration-none">Cookie-Richtlinie</a></li>
-      </ul>
-     </div>
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-main">
+      <div class="dr-footer-brand-block" aria-label="domain logo">
+        <div class="dr-footer-logo">
+          <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
+       <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
+      </svg>
+        </div>
+        <p class="dr-footer-disclaimer">All information provided on domain.com is for general informational purposes only and does not constitute professional advice, an offer, or a guarantee of any kind. domain makes no representations or warranties regarding completeness, accuracy, reliability, suitability, or availability of any content or services referenced on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to update, modify, or remove content on domain.com at any time without prior notice.</p>
+      </div>
+
+      <div class="dr-footer-nav-block" aria-label="Site navigation">
+        <h2 class="dr-footer-heading">Navigate</h2>
+        <ul class="dr-footer-nav-list">
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="dr-footer-legal-block" aria-label="Legal">
+        <h2 class="dr-footer-heading">Legal</h2>
+        <ul class="dr-footer-legal-list">
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+        </ul>
+      </div>
     </div>
-    <hr class="my-4 border-secondary">
-    <div class="row">
-     <div class="col-12 text-center">
-      <p class="mb-0">© 2025 Reisewelt Erleben. Alle Rechte vorbehalten.</p>
-     </div>
+
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-copy">© <span class="dr-footer-copy-name">domain</span>. All rights reserved.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>

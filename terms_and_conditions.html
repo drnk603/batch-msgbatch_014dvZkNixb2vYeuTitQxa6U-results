@@ -1,44 +1,81 @@
 <!DOCTYPE html><html lang="de"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com/terms_and_conditions.html",
+      "url": "https://domain.com/terms_and_conditions.html",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "de"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Allgemeine Geschäftsbedingungen | Reisewelt Deutschland</title>
-  <meta name="description" content="Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Reiseplattform. Erfahren Sie mehr über Ihre Rechte und Pflichten als Nutzer.">
-  <meta property="og:title" content="Allgemeine Geschäftsbedingungen | Reisewelt Deutschland">
-  <meta property="og:description" content="Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Reiseplattform. Erfahren Sie mehr über Ihre Rechte und Pflichten als Nutzer.">
+  <title>domain | domain Deutschland</title>
+  <meta name="description" content="Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Reiseplattform. Erfahren Sie mehr über domain Rechte und Pflichten als Nutzer.">
+  <meta property="og:title" content="domain Geschäftsbedingungen | domain Deutschland">
+  <meta property="og:description" content="Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Reiseplattform. Erfahren Sie mehr über domain Rechte und Pflichten als Nutzer.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domain.com/terms_and_conditions.html">
   <link rel="canonical" href="https://domain.com/terms_and_conditions.html">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom" style="--bs-border-color: var(--color-neutral-200);" aria-label="Hauptnavigation">
-    <div class="container-fluid px-3 px-lg-4">
-     <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Zur Startseite"> 
-      <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reisewelt München Logo">
+  <header class="dr-header" aria-label="Primary">
+  <div class="dr-header-inner">
+    <div class="dr-header-brand">
+      <div class="dr-header-logo" aria-label="domain logo" role="img">
+        <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
        <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
-      </svg> 
-     </a>
-     <button class="c-nav__toggle" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten"><span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span></button>
-     <nav class="c-nav" id="mainNav" aria-label="Hauptnavigation">
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a href="/" class="c-nav__link" aria-current="page">Startseite</a></li>
-       <li class="c-nav__item"><a href="/services.html" class="c-nav__link">Dienstleistungen</a></li>
-       <li class="c-nav__item"><a href="/about.html" class="c-nav__link">Über uns</a></li>
-      </ul>
-     </nav>
-     <a href="#contact-form" class="c-button c-button--primary c-nav__cta">Jetzt buchen</a>
+      </svg>
+      </div>
     </div>
-   </nav>
-  </header>
+
+    <nav class="dr-nav" aria-label="Main navigation">
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="dr-nav-menu">
+        <span class="dr-nav-toggle-bar"></span>
+        <span class="dr-nav-toggle-bar"></span>
+      </button>
+      <div class="dr-nav-menu" id="dr-nav-menu">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
   <main>
    <nav aria-label="breadcrumb" class="py-3">
     <div class="container">
      <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Startseite</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Allgemeine Geschäftsbedingungen</li>
+      <li class="breadcrumb-item active" aria-current="page">domain Geschäftsbedingungen</li>
      </ol>
     </div>
    </nav>
@@ -46,7 +83,7 @@
     <div class="container">
      <div class="row">
       <div class="col-12">
-       <h1 class="mb-4" data-aos="fade-up">Allgemeine Geschäftsbedingungen</h1>
+       <h1 class="mb-4" data-aos="fade-up">domain Geschäftsbedingungen</h1>
        <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100"><strong>Letzte Aktualisierung:</strong> 12. Januar 2025</p>
       </div>
      </div>
@@ -55,7 +92,7 @@
        <article class="c-legal-content">
         <section class="mb-5" data-aos="fade-up" data-aos-delay="150">
          <h2 class="h3 mb-3">1. Geltungsbereich</h2>
-         <p>Diese Allgemeinen Geschäftsbedingungen ("AGB") gelten für die Nutzung der Website <strong>domain.com</strong> ("Website") und aller damit verbundenen Dienstleistungen, die von <strong>Reisewelt Deutschland</strong> ("wir", "uns", "unser") angeboten werden.</p>
+         <p>Diese Allgemeinen Geschäftsbedingungen ("AGB") gelten für die Nutzung der Website <strong>domain.com</strong> ("Website") und aller damit verbundenen Dienstleistungen, die von <strong>domain Deutschland</strong> ("wir", "uns", "unser") angeboten werden.</p>
          <p>Durch den Zugriff auf oder die Nutzung unserer Website stimmen Sie diesen AGB zu. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, nutzen Sie bitte unsere Website nicht.</p>
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -67,7 +104,7 @@
          </ul>
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="250">
-         <h2 class="h3 mb-3">3. Nutzungsbedingungen</h2>
+         <h2 class="h3 mb-3">3. domain</h2>
          <h3 class="h5 mb-2">3.1 Erlaubte Nutzung</h3>
          <p>Sie dürfen unsere Website für persönliche, nicht-kommerzielle Zwecke nutzen. Sie verpflichten sich:</p>
          <ul>
@@ -117,7 +154,7 @@
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="350">
          <h2 class="h3 mb-3">5. Geistiges Eigentum</h2>
-         <p>Alle Inhalte auf dieser Website, einschließlich aber nicht beschränkt auf Texte, Grafiken, Logos, Bilder, Videos, Audio-Clips und Software, sind Eigentum von Reisewelt Deutschland oder unseren Lizenzgebern und durch deutsche und internationale Urheberrechtsgesetze geschützt.</p>
+         <p>Alle Inhalte auf dieser Website, einschließlich aber nicht beschränkt auf Texte, Grafiken, Logos, Bilder, Videos, Audio-Clips und Software, sind Eigentum von domain Deutschland oder unseren Lizenzgebern und durch deutsche und internationale Urheberrechtsgesetze geschützt.</p>
          <h3 class="h5 mb-2 mt-4">5.1 Nutzungsrechte</h3>
          <p>Wir gewähren Ihnen eine begrenzte, nicht-exklusive, nicht-übertragbare Lizenz zur:</p>
          <ul>
@@ -131,13 +168,13 @@
           <li>Inhalte modifizieren, kopieren, verbreiten oder weiterverkaufen</li>
           <li>Reverse Engineering, Dekompilierung oder Disassemblierung von Software durchführen</li>
           <li>Urheberrechtsvermerke, Marken oder andere Eigentumshinweise entfernen</li>
-          <li>Unsere Inhalte in abgeleiteten Werken verwenden</li>
+          <li>domain Inhalte in abgeleiteten Werken verwenden</li>
          </ul>
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="400">
          <h2 class="h3 mb-3">6. Haftungsbeschränkungen</h2>
          <h3 class="h5 mb-2">6.1 Gewährleistungsausschluss</h3>
-         <p>Unsere Website und Dienste werden "wie besehen" bereitgestellt. Wir übernehmen keine Gewährleistung für:</p>
+         <p>domain Website und Dienste werden "wie besehen" bereitgestellt. Wir übernehmen keine Gewährleistung für:</p>
          <ul>
           <li>Die ununterbrochene oder fehlerfreie Verfügbarkeit der Website</li>
           <li>Die Richtigkeit, Vollständigkeit oder Aktualität der Informationen</li>
@@ -174,14 +211,14 @@
          <ul>
           <li>Verlieren Sie sofort alle Zugriffsrechte</li>
           <li>Bleiben bestehende Buchungen und Zahlungsverpflichtungen bestehen</li>
-          <li>Werden Ihre Daten gemäß unserer Datenschutzrichtlinie behandelt</li>
+          <li>Werden domain Daten gemäß unserer Datenschutzrichtlinie behandelt</li>
           <li>Können bereits gezahlte Gebühren nicht erstattet werden</li>
          </ul>
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="500">
          <h2 class="h3 mb-3">8. Änderungen der Bedingungen</h2>
          <p>Wir behalten uns das Recht vor, diese AGB jederzeit zu ändern oder zu aktualisieren. Änderungen werden wirksam, sobald sie auf dieser Seite veröffentlicht werden.</p>
-         <p>Bei wesentlichen Änderungen werden wir Sie per E-Mail oder durch einen deutlichen Hinweis auf unserer Website informieren. Ihre fortgesetzte Nutzung der Website nach Inkrafttreten der Änderungen gilt als Zustimmung zu den geänderten Bedingungen.</p>
+         <p>Bei wesentlichen Änderungen werden wir Sie per E-Mail oder durch einen deutlichen Hinweis auf unserer Website informieren. domain fortgesetzte Nutzung der Website nach Inkrafttreten der Änderungen gilt als Zustimmung zu den geänderten Bedingungen.</p>
          <p class="mt-3"><strong>Empfehlung:</strong> Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um über Änderungen informiert zu bleiben.</p>
         </section>
         <section class="mb-5" data-aos="fade-up" data-aos-delay="550">
@@ -202,22 +239,22 @@
          <h2 class="h3 mb-3">11. Kontaktinformationen</h2>
          <p>Bei Fragen zu diesen Allgemeinen Geschäftsbedingungen kontaktieren Sie uns bitte:</p>
          <div class="c-contact-box p-4 mt-3">
-          <p class="mb-2"><strong>Reisewelt Deutschland</strong></p>
+          <p class="mb-2"><strong>domain Deutschland</strong></p>
           <p class="mb-2">Friedrichstraße 185
            <br>
            10117 Berlin
            <br>
            Deutschland</p>
-          <p class="mb-2"><strong>E-Mail:</strong> <a href="mailto:info@domain.com">info@domain.com</a></p>
-          <p class="mb-0"><strong>Telefon:</strong> <a href="tel:+493025749832">+49 30 25749832</a></p>
+          <p class="mb-2"><strong>E-Mail:</strong> <a href="mailto:support@domain.com">support@domain.com</a></p>
+          <p class="mb-0"><strong>Telefon:</strong> <a href="tel:+49 40 3662105">+49 40 3662105</a></p>
          </div>
         </section>
         <section data-aos="fade-up" data-aos-delay="700">
          <h2 class="h3 mb-3">12. Zusätzliche Bestimmungen</h2>
          <h3 class="h5 mb-2">12.1 Gesamtvereinbarung</h3>
-         <p>Diese AGB stellen zusammen mit unserer <a href="/privacy.html">Datenschutzerklärung</a>, <a href="/terms_of_services.html">Nutzungsbedingungen</a> und <a href="/cookie_policy.html">Cookie-Richtlinie</a> die gesamte Vereinbarung zwischen Ihnen und Reisewelt Deutschland dar und ersetzen alle vorherigen mündlichen oder schriftlichen Vereinbarungen.</p>
+         <p>Diese AGB stellen zusammen mit unserer <a href="/privacy.html">Datenschutzerklärung</a>, <a href="/terms_of_services.html">domain</a> und <a href="/cookie_policy.html">Cookie-domain</a> die gesamte Vereinbarung zwischen Ihnen und domain Deutschland dar und ersetzen alle vorherigen mündlichen oder schriftlichen Vereinbarungen.</p>
          <h3 class="h5 mb-2 mt-4">12.2 Abtretung</h3>
-         <p>Sie dürfen Ihre Rechte oder Pflichten aus diesen AGB nicht ohne unsere vorherige schriftliche Zustimmung abtreten. Wir können unsere Rechte und Pflichten ohne Einschränkung abtreten.</p>
+         <p>Sie dürfen domain Rechte oder Pflichten aus diesen AGB nicht ohne unsere vorherige schriftliche Zustimmung abtreten. Wir können unsere Rechte und Pflichten ohne Einschränkung abtreten.</p>
          <h3 class="h5 mb-2 mt-4">12.3 Verzicht</h3>
          <p>Ein Verzicht auf die Durchsetzung einer Bestimmung dieser AGB stellt keinen Verzicht auf das Recht dar, diese Bestimmung zu einem späteren Zeitpunkt durchzusetzen.</p>
          <h3 class="h5 mb-2 mt-4">12.4 Sprache</h3>
@@ -233,17 +270,17 @@
           <ul class="list-unstyled">
            <li class="mb-3"><a href="/privacy.html" class="text-decoration-none"> <strong>Datenschutzerklärung</strong> 
              <br> 
-             <small class="text-muted">Erfahren Sie, wie wir Ihre Daten schützen</small> </a></li>
-           <li class="mb-3"><a href="/terms_of_services.html" class="text-decoration-none"> <strong>Nutzungsbedingungen</strong> 
+             <small class="text-muted">Erfahren Sie, wie wir domain Daten schützen</small> </a></li>
+           <li class="mb-3"><a href="/terms_of_services.html" class="text-decoration-none"> <strong>domain</strong> 
              <br> 
              <small class="text-muted">Regeln für die Nutzung unserer Dienste</small> </a></li>
-           <li class="mb-3"><a href="/cookie_policy.html" class="text-decoration-none"> <strong>Cookie-Richtlinie</strong> 
+           <li class="mb-3"><a href="/cookie_policy.html" class="text-decoration-none"> <strong>Cookie-domain</strong> 
              <br> 
              <small class="text-muted">Informationen über unsere Cookie-Nutzung</small> </a></li>
           </ul>
           <hr class="my-4">
           <h3 class="h5 mb-3">Haben Sie Fragen?</h3>
-          <p class="small text-muted mb-3">Unser Team steht Ihnen gerne zur Verfügung, um alle Ihre Fragen zu diesen Bedingungen zu beantworten.</p>
+          <p class="small text-muted mb-3">Unser Team steht Ihnen gerne zur Verfügung, um alle domain Fragen zu diesen Bedingungen zu beantworten.</p>
           <a href="/#contact" class="btn c-button c-button--secondary w-100">Kontaktieren Sie uns</a>
          </div>
         </div>
@@ -253,49 +290,53 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer bg-dark text-white py-4 py-md-5">
-   <div class="container">
-    <div class="row g-4">
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Reisewelt Erleben</h3>
-      <p>Ihr vertrauensvoller Partner für unvergessliche Reiseerlebnisse in Deutschland und weltweit.</p>
-      <p class="mb-2"><strong>Adresse:</strong>
-       <br>
-       Friedrichstraße 123
-       <br>
-       10117 Berlin
-       <br>
-       Deutschland</p>
-      <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+493012345678" class="text-white text-decoration-none">+49 30 12345678</a></p>
-      <p><strong>E-Mail:</strong> <a href="mailto:info@domain.com" class="text-white text-decoration-none">info@domain.com</a></p>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Schnelllinks</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Startseite</a></li>
-       <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Über uns</a></li>
-       <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Dienstleistungen</a></li>
-       <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Kontakt</a></li>
-      </ul>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Rechtliches</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Datenschutzerklärung</a></li>
-       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white text-decoration-none">AGB</a></li>
-       <li class="mb-2"><a href="terms_of_services.html" class="text-white text-decoration-none">Nutzungsbedingungen</a></li>
-       <li class="mb-2"><a href="cookie_policy.html" class="text-white text-decoration-none">Cookie-Richtlinie</a></li>
-      </ul>
-     </div>
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-main">
+      <div class="dr-footer-brand-block" aria-label="domain logo">
+        <div class="dr-footer-logo">
+          <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
+       <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
+      </svg>
+        </div>
+        <p class="dr-footer-disclaimer">All information provided on domain.com is for general informational purposes only and does not constitute professional advice, an offer, or a guarantee of any kind. domain makes no representations or warranties regarding completeness, accuracy, reliability, suitability, or availability of any content or services referenced on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to update, modify, or remove content on domain.com at any time without prior notice.</p>
+      </div>
+
+      <div class="dr-footer-nav-block" aria-label="Site navigation">
+        <h2 class="dr-footer-heading">Navigate</h2>
+        <ul class="dr-footer-nav-list">
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="dr-footer-legal-block" aria-label="Legal">
+        <h2 class="dr-footer-heading">Legal</h2>
+        <ul class="dr-footer-legal-list">
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+        </ul>
+      </div>
     </div>
-    <hr class="my-4 border-secondary">
-    <div class="row">
-     <div class="col-12 text-center">
-      <p class="mb-0">© 2025 Reisewelt Erleben. Alle Rechte vorbehalten.</p>
-     </div>
+
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-copy">© <span class="dr-footer-copy-name">domain</span>. All rights reserved.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>

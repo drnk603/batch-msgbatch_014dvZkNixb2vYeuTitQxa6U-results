@@ -1,12 +1,41 @@
 <!DOCTYPE html><html lang="de"><head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://domain.com/#website",
+      "url": "https://domain.com",
+      "name": "domain"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://domain.com/#org",
+      "name": "domain",
+      "url": "https://domain.com"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://domain.com",
+      "url": "https://domain.com",
+      "name": "domain",
+      "isPartOf": {
+        "@id": "https://domain.com/#website"
+      },
+      "inLanguage": "de"
+    }
+  ]
+}
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entdecken Sie unvergessliche Reiseerlebnisse in Deutschland. Professionelle Reiseplanung, maßgeschneiderte Touren und erstklassiger Service für Ihren perfekten Urlaub.">
+  <meta name="description" content="domain Sie unvergessliche Reiseerlebnisse in Deutschland. Professionelle Reiseplanung, maßgeschneiderte Touren und erstklassiger Service für Ihren perfekten Urlaub.">
   <meta name="keywords" content="Tourismus Deutschland, Reisen, Urlaubsplanung, Tourismusdienstleistungen, Reiseangebote">
-  <meta name="author" content="Reisewelt Premium">
+  <meta name="author" content="domain Premium">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Premium Reiseerlebnisse in Deutschland | TravelExpert">
-  <meta property="og:description" content="Entdecken Sie unvergessliche Reiseerlebnisse in Deutschland. Maßgeschneiderte Touren, exklusive Angebote und persönliche Betreuung für Ihren perfekten Urlaub.">
+  <meta property="og:title" content="Premium Reiseerlebnisse in Deutschland | domain">
+  <meta property="og:description" content="domain Sie unvergessliche Reiseerlebnisse in Deutschland. Maßgeschneiderte Touren, exklusive Angebote und persönliche Betreuung für Ihren perfekten Urlaub.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domain.com/">
   <meta property="og:image" content="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&amp;h=630&amp;fit=crop">
@@ -15,28 +44,36 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- </head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="./header-footer.css">
+</head>
  <body>
-  <header class="l-header">
-   <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom" style="--bs-border-color: var(--color-neutral-200);" aria-label="Hauptnavigation">
-    <div class="container-fluid px-3 px-lg-4">
-     <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Zur Startseite"> 
-      <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reisewelt München Logo">
+  <header class="dr-header" aria-label="Primary">
+  <div class="dr-header-inner">
+    <div class="dr-header-brand">
+      <div class="dr-header-logo" aria-label="domain logo" role="img">
+        <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
        <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
-      </svg> 
-     </a>
-     <button class="c-nav__toggle" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten"><span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span> <span class="c-nav__toggle-bar"></span></button>
-     <nav class="c-nav" id="mainNav" aria-label="Hauptnavigation">
-      <ul class="c-nav__list">
-       <li class="c-nav__item"><a href="/" class="c-nav__link" aria-current="page">Startseite</a></li>
-       <li class="c-nav__item"><a href="/services.html" class="c-nav__link">Dienstleistungen</a></li>
-       <li class="c-nav__item"><a href="/about.html" class="c-nav__link">Über uns</a></li>
-      </ul>
-     </nav>
-     <a href="#contact-form" class="c-button c-button--primary c-nav__cta">Jetzt buchen</a>
+      </svg>
+      </div>
     </div>
-   </nav>
-  </header>
+
+    <nav class="dr-nav" aria-label="Main navigation">
+      <button class="dr-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="dr-nav-menu">
+        <span class="dr-nav-toggle-bar"></span>
+        <span class="dr-nav-toggle-bar"></span>
+      </button>
+      <div class="dr-nav-menu" id="dr-nav-menu">
+        <ul class="dr-nav-list">
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./about.html">About</a></li>
+          <li class="dr-nav-item"><a class="dr-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
   <main id="main-content">
    <section class="l-section c-hero" data-aos="fade-up">
     <div class="c-hero__background" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&amp;h=1080&amp;fit=crop');" role="img" aria-label="Reisende erkunden malerische Landschaften"></div>
@@ -44,10 +81,10 @@
     <div class="container position-relative">
      <div class="row align-items-center min-vh-100 py-5">
       <div class="col-lg-8 col-xl-6 text-white" data-aos="fade-up">
-       <h1 class="display-3 fw-bold mb-4">Entdecken Sie unvergessliche Reiseerlebnisse</h1>
-       <p class="lead mb-4">Erkunden Sie die schönsten Reiseziele Deutschlands mit maßgeschneiderten Touren und persönlichem Service. Ihre nächste Traumreise beginnt hier.</p>
+       <h1 class="display-3 fw-bold mb-4">domain Sie unvergessliche Reiseerlebnisse</h1>
+       <p class="lead mb-4">Erkunden Sie die schönsten Reiseziele Deutschlands mit maßgeschneiderten Touren und persönlichem Service. domain nächste Traumreise beginnt hier.</p>
        <div class="d-flex flex-column flex-sm-row gap-3">
-        <a href="#angebote" class="c-button c-button--primary">Reisen entdecken</a> <a href="/services.html" class="c-button c-button--secondary">Unsere Leistungen</a>
+        <a href="#angebote" class="c-button c-button--primary">Reisen entdecken</a> <a href="/services.html" class="c-button c-button--secondary">domain Leistungen</a>
        </div>
       </div>
      </div>
@@ -57,7 +94,7 @@
     <div class="container">
      <div class="row mb-4" data-aos="fade-up">
       <div class="col-12 text-center">
-       <h2 class="display-5 fw-bold mb-3">Entdecken Sie Unsere Top-Reiseziele</h2>
+       <h2 class="display-5 fw-bold mb-3">domain Sie domain Top-Reiseziele</h2>
        <p class="lead text-muted">Handverlesene Erlebnisse für unvergessliche Reisen</p>
       </div>
      </div>
@@ -69,7 +106,7 @@
         </div>
         <div class="card-body d-flex flex-column">
          <h3 class="c-card__title h5">Städtereisen</h3>
-         <p class="c-card__text">Entdecken Sie die aufregendsten Metropolen Europas mit exklusiven Stadtführungen und kulturellen Highlights.</p>
+         <p class="c-card__text">domain Sie die aufregendsten Metropolen Europas mit exklusiven Stadtführungen und kulturellen Highlights.</p>
          <a href="services.html#city-tours" class="btn btn-outline-primary mt-auto">Mehr erfahren</a>
         </div>
        </div>
@@ -105,24 +142,24 @@
     <div class="container">
      <div class="row align-items-center g-4">
       <div class="col-12 col-lg-6" data-aos="fade-right">
-       <h2 class="display-5 fw-bold mb-3">Ihre Reise immer dabei</h2>
+       <h2 class="display-5 fw-bold mb-3">domain Reise immer dabei</h2>
        <p class="lead mb-4">Mit unserer mobilen App haben Sie alle Reiseinformationen, Buchungen und exklusive Angebote jederzeit griffbereit. Planen Sie unterwegs, erhalten Sie Echtzeit-Updates und genießen Sie einen nahtlosen Reiseservice.</p>
        <ul class="list-unstyled mb-4">
         <li class="mb-2">
          <svg class="d-inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9 12l2 2 4-4m6 2a9 040-673-3825 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
          </svg>
          <span class="ms-2">Echtzeit-Benachrichtigungen zu Ihrer Reise</span>
         </li>
         <li class="mb-2">
          <svg class="d-inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9 12l2 2 4-4m6 2a9 040-673-3825 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
          </svg>
          <span class="ms-2">Offline-Zugriff auf Reisedokumente</span>
         </li>
         <li class="mb-2">
          <svg class="d-inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M9 12l2 2 4-4m6 2a9 040-673-3825 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
          </svg>
          <span class="ms-2">Exklusive App-Only Angebote</span>
         </li>
@@ -144,7 +181,7 @@
      <div class="row justify-content-center">
       <div class="col-12 col-lg-8 text-center" data-aos="zoom-in">
        <h2 class="display-4 fw-bold mb-4">Bereit für Ihr nächstes Abenteuer?</h2>
-       <p class="lead mb-4">Lassen Sie uns gemeinsam Ihre Traumreise planen. Kontaktieren Sie uns noch heute und erhalten Sie ein individuelles Angebot.</p>
+       <p class="lead mb-4">Lassen Sie uns gemeinsam domain Traumreise planen. Kontaktieren Sie uns noch heute und erhalten Sie ein individuelles Angebot.</p>
        <a href="#contact" class="btn btn-primary btn-lg px-5">Jetzt anfragen</a>
       </div>
      </div>
@@ -166,8 +203,8 @@
           </svg>
          </div>
          <h3 class="h5 mb-3">E-Mail Support</h3>
-         <p class="mb-3">Schreiben Sie uns Ihre Fragen und wir antworten innerhalb von 24 Stunden.</p>
-         <a href="mailto:info@domain.com" class="btn btn-outline-primary mt-auto">E-Mail senden</a>
+         <p class="mb-3">Schreiben Sie uns domain Fragen und wir antworten innerhalb von 24 Stunden.</p>
+         <a href="mailto:support@domain.com" class="btn btn-outline-primary mt-auto">E-Mail senden</a>
         </div>
        </div>
       </div>
@@ -176,12 +213,12 @@
         <div class="card-body d-flex flex-column">
          <div class="ratio ratio-1x1 mx-auto mb-3" style="width: 80px; height: 80px;">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-           <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+           <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 +49 40 3662105 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 +49 (0)40 9726893 6V5z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
          </div>
          <h3 class="h5 mb-3">Telefonischer Support</h3>
          <p class="mb-3">Rufen Sie uns an für sofortige Unterstützung und persönliche Beratung.</p>
-         <a href="tel:+493012345678" class="btn btn-outline-primary mt-auto">Jetzt anrufen</a>
+         <a href="tel:+49 (0)40 9726893" class="btn btn-outline-primary mt-auto">Jetzt anrufen</a>
         </div>
        </div>
       </div>
@@ -190,7 +227,7 @@
         <div class="card-body d-flex flex-column">
          <div class="ratio ratio-1x1 mx-auto mb-3" style="width: 80px; height: 80px;">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-           <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+           <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 040-673-3825 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 +49 40 3662105 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
          </div>
          <h3 class="h5 mb-3">Live-Chat</h3>
@@ -228,8 +265,8 @@
             <label for="phone" class="form-label">Telefonnummer</label> <input type="tel" class="form-control" id="phone" name="phone">
            </div>
            <div class="col-12">
-            <label for="message" class="form-label">Ihre Nachricht *</label> <textarea class="form-control" id="message" name="message" rows="5" required=""></textarea>
-            <div class="invalid-feedback">Bitte geben Sie Ihre Nachricht ein.</div>
+            <label for="message" class="form-label">domain Nachricht *</label> <textarea class="form-control" id="message" name="message" rows="5" required=""></textarea>
+            <div class="invalid-feedback">Bitte geben Sie domain Nachricht ein.</div>
            </div>
            <div class="col-12">
             <div class="form-check">
@@ -249,49 +286,53 @@
     </div>
    </section>
   </main>
-  <footer class="l-footer bg-dark text-white py-4 py-md-5">
-   <div class="container">
-    <div class="row g-4">
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Reisewelt Erleben</h3>
-      <p>Ihr vertrauensvoller Partner für unvergessliche Reiseerlebnisse in Deutschland und weltweit.</p>
-      <p class="mb-2"><strong>Adresse:</strong>
-       <br>
-       Friedrichstraße 123
-       <br>
-       10117 Berlin
-       <br>
-       Deutschland</p>
-      <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+493012345678" class="text-white text-decoration-none">+49 30 12345678</a></p>
-      <p><strong>E-Mail:</strong> <a href="mailto:info@domain.com" class="text-white text-decoration-none">info@domain.com</a></p>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Schnelllinks</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Startseite</a></li>
-       <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Über uns</a></li>
-       <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Dienstleistungen</a></li>
-       <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Kontakt</a></li>
-      </ul>
-     </div>
-     <div class="col-12 col-md-4">
-      <h3 class="h5 mb-3">Rechtliches</h3>
-      <ul class="list-unstyled">
-       <li class="mb-2"><a href="privacy.html" class="text-white text-decoration-none">Datenschutzerklärung</a></li>
-       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white text-decoration-none">AGB</a></li>
-       <li class="mb-2"><a href="terms_of_services.html" class="text-white text-decoration-none">Nutzungsbedingungen</a></li>
-       <li class="mb-2"><a href="cookie_policy.html" class="text-white text-decoration-none">Cookie-Richtlinie</a></li>
-      </ul>
-     </div>
+  <footer class="dr-footer" aria-label="Footer">
+  <div class="dr-footer-inner">
+    <div class="dr-footer-main">
+      <div class="dr-footer-brand-block" aria-label="domain logo">
+        <div class="dr-footer-logo">
+          <svg class="c-logo__img" width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="domain München Logo">
+       <rect width="150" height="40" rx="4" fill="var(--color-primary)"></rect> <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="var(--font-family-heading)" font-size="18" font-weight="700">ReisenWelt</text>
+      </svg>
+        </div>
+        <p class="dr-footer-disclaimer">All information provided on domain.com is for general informational purposes only and does not constitute professional advice, an offer, or a guarantee of any kind. domain makes no representations or warranties regarding completeness, accuracy, reliability, suitability, or availability of any content or services referenced on domain.com. Any reliance you place on such information is strictly at your own risk. domain reserves the right to update, modify, or remove content on domain.com at any time without prior notice.</p>
+      </div>
+
+      <div class="dr-footer-nav-block" aria-label="Site navigation">
+        <h2 class="dr-footer-heading">Navigate</h2>
+        <ul class="dr-footer-nav-list">
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./index.html">Home</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./about.html">About</a></li>
+          <li class="dr-footer-nav-item"><a class="dr-footer-nav-link" href="./services.html">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="dr-footer-legal-block" aria-label="Legal">
+        <h2 class="dr-footer-heading">Legal</h2>
+        <ul class="dr-footer-legal-list">
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./cookie_policy.html">Cookie Policy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./privacy.html">Privacy</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./services.html">Services</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_and_conditions.html">Terms And Conditions</a></li>
+          <li class="dr-footer-legal-item"><a class="dr-footer-legal-link" href="./terms_of_services.html">Terms Of Services</a></li>
+        </ul>
+      </div>
     </div>
-    <hr class="my-4 border-secondary">
-    <div class="row">
-     <div class="col-12 text-center">
-      <p class="mb-0">© 2025 Reisewelt Erleben. Alle Rechte vorbehalten.</p>
-     </div>
+
+    <div class="dr-footer-bottom">
+      <p class="dr-footer-copy">© <span class="dr-footer-copy-name">domain</span>. All rights reserved.</p>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js" defer=""></script>
  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+if (typeof AOS !== "undefined" && !window.__AOS_INITIALIZED__) {
+  AOS.init({ once: true, duration: 700, easing: "ease-out-cubic" });
+  window.__AOS_INITIALIZED__ = true;
+}
+</script>
+<script src="./header-footer.js"></script>
+<script src="./consent.js"></script>
 </body></html>
